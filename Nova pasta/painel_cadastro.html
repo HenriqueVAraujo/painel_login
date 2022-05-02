@@ -5,9 +5,93 @@
         <title>Pagina Cadastro</title>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
-    <body>
-        <div>
-            
+    <style>
+        
+body#cadastro{
+    background-image: linear-gradient(45deg, rgba(0, 47, 255, 0.24), rgba(57, 68, 61, 0.74));
+}
+div#tela_cadastro h1{
+    display: block;
+    margin-left: 10%;
+    margin-top: -10%;
+}
+div#tela_cadastro{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 70px;
+    border-radius: 15px;
+    color: white;
+}
+div#tela_cadastro{
+    color: white;
+    font-family: Arial, sans-serif;    
+    
+}
+fieldset{
+    border: none;
+    padding: 0;
+    margin:0;
+}
+label{
+    margin: 5px;
+}
+input{
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 15px;
+}
+div#enviar button{
+    margin-left: 4%;
+    margin-top: 30px;
+    margin-bottom: -100px;
+}
+div#enviar button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    
+}
+div#enviar button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+    </style>
+    <body id="cadastro">
+        <div id="tela_cadastro">  
+            <h1>Tela de Cadastro</h1>
+            <form>
+                <fieldset class="grupo">    
+                    <div class="nome_sobre">
+                        <label for="nome"><strong>Nome: *</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+    
+                    <div class="nome_sobre">
+                        <label for="sobrenome"><strong>Sobrenome: *</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+
+                    <div class="nome_sobre">
+                        <label for="senha"><strong>Senha: *</strong></label>
+                        <input type="password" name="senha" id="senha" required>
+                    </div>
+                </fieldset> 
+    
+                <div class="campo">
+                    <label for="email"><strong>Email: *</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div id="enviar">
+                    <button type="submit" onsubmit="">Send</button>
+                </div>
+            </form>
         </div>
     </body>
 </html>
